@@ -8,8 +8,12 @@ public interface ProductCategoryDao {
 
     void add(ProductCategory category);
     ProductCategory find(int id);
+
     void remove(int id);
+    ProductCategory findByName(String name);
 
     List<ProductCategory> getAll();
 
+    List<String> getAllCapitalised();
+    String getWordCapitalised(String word);
 }
